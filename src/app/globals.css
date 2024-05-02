@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,16 +20,138 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+nav {
+  font-family: "Poppins", sans-serif;
+  font-size: .8em;
+  font-style: normal;
+  padding: .5%;
+}
+
+.navbar-visible {
+  display: flex;
+}
+
+.navbar-hidden {
+  transform: translateY(-150%);
+  /* Hide the navbar by moving it off-screen */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.secondary-font {
+  color: rgb(153, 153, 153)
+}
+
+.shine-btn {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  background-color: rgb(5, 5, 5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  outline: none;
+  overflow: hidden;
+
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+.shine-btn:hover {
+  transform: scale(1.05);
+  color: rgb(211, 211, 211);
+  background: #2b2b2bb1;
+}
+
+
+.shine-btn:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.shine-btn::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%);
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+
+ul {
+  display: flex;
+
+  align-items: start;
+  list-style-type: none;
+
+  li {
+
+
+    a {
+      position: relative;
+      display: block;
+      letter-spacing: 1px !important;
+      text-decoration: none;
+      transition: 0.2s;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #ffffff;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.2s;
+      }
+
+      &:hover {
+        color: #4593ffb2;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
   }
 }
