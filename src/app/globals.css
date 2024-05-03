@@ -27,6 +27,7 @@ body {
   font-size: 1em;
   font-style: normal;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 nav {
@@ -34,6 +35,17 @@ nav {
   font-size: .8em;
   font-style: normal;
   padding: .5%;
+  position: sticky;
+  top: 2%;
+  z-index: 99;
+  box-shadow: 0 14px 28px rgba(70, 69, 69, 0.25),
+    0 10px 10px rgba(250, 249, 208, 0.22);
+
+  transition: transform 0.2s;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+
+  font-style: normal;
 }
 
 .navbar-visible {

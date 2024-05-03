@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className={`navbar ${visible ? 'flex' : 'hidden'}bg-black secondary-font fixed w-[100vw] items-center mt-4 shadow-lg transition duration-500 ease-in-out border-[#225ac140] flex justify-evenly ${visible ? 'navbar-visible' : 'navbar-hidden'}`}>
+    <nav className={`navbar ${visible ? 'flex' : 'hidden'}bg-black secondary-font w-[100vw] items-center  shadow-lg transition duration-500 ease-in-out border-[#225ac140] flex justify-evenly ${visible ? 'navbar-visible' : 'navbar-hidden'}`}>
         
     
     <Image src={logo}  alt='logo' className='w-[6%] aspect-auto'/>
@@ -41,12 +41,12 @@ const Navbar: React.FC = () => {
         <ul className={`nav-menu ${isOpen ? 'open' : ''} flex gap-8 items-center justify-center`}>
           <li className='nav-item'>
             <Link href='/home' passHref onClick={toggleMenu}>
-         About
+        Home
             </Link>
           </li>
           <li className='nav-item'>
             <Link href='/home' passHref onClick={toggleMenu}>
-          Reviews
+        About Us
             </Link>
           </li>
           <li className='nav-item'>
@@ -56,14 +56,15 @@ const Navbar: React.FC = () => {
           </li>
           <li className='nav-item'>
             <Link href='/home' passHref onClick={toggleMenu}>
-        FAQs
+      Tech
             </Link>
           </li>
         </ul>
       </div>
-      <button className="shine-btn rounded-full border-2 px-3 py-1 border-[#3d3d3d6c]" >
+      <button className="shine-btn rounded-full border-2 px-3 py-[0.2rem] border-[#3d3d3d6c]" >
                Contact Us
-                    </button>    </nav>
+                    </button>   
+                     </nav>
   );
 };
 
