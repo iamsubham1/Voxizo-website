@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -23,16 +28,16 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  font-family: "Poppins", sans-serif;
-  font-size: 1em;
+  font-family: "Poppins", sans-serif !important;
   font-style: normal;
-  scroll-behavior: smooth;
+
   overflow-x: hidden;
+
 }
 
 nav {
   font-family: "Poppins", sans-serif;
-  font-size: .8em;
+  font-size: 1em;
   font-style: normal;
   padding: .5%;
   position: sticky;
@@ -63,13 +68,20 @@ nav {
   }
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 5%;
+
+
+}
+
 .secondary-font {
   color: rgb(153, 153, 153)
 }
 
 .shine-btn {
   position: relative;
-  transition: all 0.3s ease-in-out;
 
   background-color: rgb(5, 5, 5);
 
@@ -85,7 +97,11 @@ nav {
   transition: all 0.2s ease-in-out;
 }
 
-
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
 
 .shine-btn:hover {
   transform: scale(1.05);
@@ -93,6 +109,9 @@ nav {
   background: #2b2b2bb1;
 }
 
+.hero-btn:hover .icon {
+  transform: translate(4px);
+}
 
 .shine-btn:hover::before {
   animation: shine 1.5s ease-out infinite;
@@ -105,11 +124,55 @@ nav {
   height: 100%;
   background-image: linear-gradient(120deg,
       rgba(255, 255, 255, 0) 30%,
-      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.336),
       rgba(255, 255, 255, 0) 70%);
   top: 0;
   left: -100px;
   opacity: 0.6;
+}
+
+
+.hero-btn {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+
+  background-color: rgb(5, 5, 5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  border: 2px solid #555555;
+
+  outline: none;
+  overflow: hidden;
+
+}
+
+
+.hero-btn::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.336),
+      rgba(255, 255, 255, 0) 70%);
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+  animation: shine 2s ease-out infinite;
+
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  color: rgb(216, 216, 216);
+  background: #28282891;
+  border: 2px solid #ffffff;
 }
 
 @keyframes shine {
@@ -166,4 +229,92 @@ ul {
       }
     }
   }
+}
+
+.continer {
+  font-family: "Poppins", sans-serif;
+}
+
+.easy {
+  transform: rotate(-8deg) !important;
+  bottom: 2vh !important;
+  position: relative;
+  background: #0970d1f8;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 40px 15px rgba(102, 105, 253, 0.575),
+    0 3px 1px rgb(255, 255, 255);
+
+}
+
+.shadow {
+  box-shadow: 0px 0px 20px 1px rgba(170, 170, 170, 0.178);
+}
+
+
+
+@keyframes scroll {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+.animate {
+  animation: scroll 20s ease-in infinite;
+}
+
+.ImageSlider {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+}
+
+
+.ImageSlider-blur-right {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5%;
+  /* Adjust width to control the blur area */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.705) 50%, rgb(0, 0, 0) 100%);
+
+  z-index: 99;
+  /* Adjust blur intensity as needed */
+}
+
+.ImageSlider-blur-left {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5%;
+  /* Adjust width to control the blur area */
+  background: linear-gradient(to left, rgba(233, 12, 12, 0) 0%, rgb(0, 0, 0, 0.705) 50%, rgb(0, 0, 0) 100%);
+
+  z-index: 99;
+  /* Adjust blur intensity as needed */
+}
+
+.ImageSlider-blur-left {
+  left: 0;
+}
+
+.ImageSlider-blur-right {
+  right: 0;
+}
+
+.ImageSlider-content {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.banner-logo {
+  width: 100px;
+
+
+  object-fit: contain !important;
 }

@@ -40,17 +40,17 @@ const Navbar: React.FC = () => {
         <label htmlFor="menu-toggle" className="menu-icon" /> */}
         <ul className={`nav-menu ${isOpen ? 'open' : ''} flex gap-8 items-center justify-center`}>
           <li className='nav-item'>
-            <Link href='/home' passHref onClick={toggleMenu}>
+            <Link href='/' passHref onClick={toggleMenu}>
         Home
             </Link>
           </li>
           <li className='nav-item'>
-            <Link href='/home' passHref onClick={toggleMenu}>
+            <Link href='/about' passHref onClick={toggleMenu}>
         About Us
             </Link>
           </li>
           <li className='nav-item'>
-            <Link href='/home' passHref onClick={toggleMenu}>
+            <Link href='#service' passHref onClick={toggleMenu}>
          Services
             </Link>
           </li>
