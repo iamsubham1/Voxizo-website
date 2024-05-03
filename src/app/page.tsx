@@ -11,10 +11,9 @@ import HeroSection from './components/HeroSection';
 const Home: React.FC = () => {
   return (
     <main className="min-h-[200vh]">
-      <BackgroundBeams />
       <div className="flex w-full flex-col items-center ">
         <HeroSection />
-        <p className='mt-[2%] mb-[2%]  text-xl'>Our Partners</p>
+        <p className='mt-[2%] mb-[1%]  text-xl'>Our Partners</p>
       </div>
       <div className='w-[80vw] mx-auto overflow-hidden flex '>
         <ImageSlider />
