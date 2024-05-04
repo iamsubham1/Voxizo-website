@@ -110,7 +110,7 @@ body {
   position: relative;
   transition: all 0.2s ease-in-out;
 
-
+  font-size: .6em;
   background-color: rgb(5, 5, 5);
 
   display: flex;
@@ -171,7 +171,7 @@ body {
 
 .easy {
   transform: rotate(-8deg) !important;
-  bottom: 2vh !important;
+  bottom: 3vh !important;
   position: relative;
   background: #0970d1f8;
   color: rgb(255, 255, 255);
@@ -185,6 +185,41 @@ body {
 }
 
 
+.gradient {
+  box-shadow: 0px 40px 100px 20px rgba(0, 132, 255, 0.5),
+    0px 30px 100px 2px rgb(190, 6, 6);
+}
+
+.text-gradient {
+
+  background: linear-gradient(90deg, rgba(125, 74, 180, 1) 0%, rgb(255, 146, 43) 51%, rgba(125, 74, 180, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  caret-color: transparent;
+
+}
+
+.gradient-border {
+  position: relative;
+  padding: 2px;
+  /* Adjust padding as needed */
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(90deg, rgba(125, 74, 180, 1) 0%, rgb(255, 146, 43) 51%, rgba(125, 74, 180, 1) 100%);
+  z-index: -1;
+}
+
+.gradient-background {
+  background: linear-gradient(90deg, rgb(90, 0, 185) 0%, rgba(253, 122, 0, 0.521) 51%, rgb(90, 19, 165) 100%);
+
+}
 
 @keyframes scroll {
   0% {
@@ -216,7 +251,7 @@ body {
   /* Adjust width to control the blur area */
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.705) 50%, rgb(0, 0, 0) 100%);
 
-  z-index: 99;
+  z-index: 98;
   /* Adjust blur intensity as needed */
 }
 
@@ -229,7 +264,7 @@ body {
   /* Adjust width to control the blur area */
   background: linear-gradient(to left, rgba(233, 12, 12, 0) 0%, rgb(0, 0, 0, 0.705) 50%, rgb(0, 0, 0) 100%);
 
-  z-index: 99;
+  z-index: 98;
   /* Adjust blur intensity as needed */
 }
 
@@ -251,4 +286,114 @@ body {
 
 
   object-fit: contain !important;
+}
+
+
+
+
+
+@media screen and (max-width: 431px) {
+  .mobile-menu {
+    width: 80vw !important;
+
+  }
+
+  .hide-list {
+    display: none;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .herofont {
+    font-size: 14px;
+  }
+
+  .easy {
+
+    bottom: 1.5vh !important;
+
+
+  }
+}
+
+
+/* Media Query for Mobile Menu */
+@media screen and (max-width: 768px) {
+  .mobile-menu-icon {
+    display: inline;
+  }
+
+  .navbar {
+    display: flex;
+
+
+  }
+
+  .logo {
+    width: 10%;
+  }
+
+  .mobile-menu {
+    width: 36vw;
+    background-color: #ffffff;
+  }
+
+  .hide-list {
+    display: none;
+  }
+
+  .herofont {
+    font-size: 18px;
+  }
+
+  .navbar {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: .5rem;
+  }
+
+  .easy {
+
+    bottom: 2vh;
+
+
+  }
+}
+
+@media screen and (max-width: 870px) {
+
+
+  .herofont {
+    font-size: 24px;
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .navbar {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1rem;
+  }
+
+  .herofont {
+    font-size: 30px;
+  }
 }

@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
 
 
@@ -78,24 +78,53 @@ const Navbar: React.FC = () => {
 
       {
         !isMobileMenuOpen ? (
-          <div className="mobile-menu text-black" style={{ animationName: !isMobileMenuOpen ? 'slidein' : 'slideout' }}>
-            <ul>
-              <li className='flex items-center cursor-pointer w-full h-[6vh]'>
+          <>
+            <div className="mobile-menu text-black py-8 px-5" style={{ animationName: !isMobileMenuOpen ? 'slidein' : 'slideout' }}>
+              <ul className={`nav-menu flex flex-col gap-8 text-[2em] items-start justify-center`}>
+                <li className='nav-item'>
+                  <Link href='/' passHref onClick={() => setIsMobileMenuOpen(true)} >
+                    Home
+                  </Link>
+                </li>
+                <li className='nav-item'>
+                  <Link href='/about' passHref onClick={() => {
+
+                    setIsMobileMenuOpen(true)
+
+                  }} >
+                    About Us
+                  </Link>
+                </li>
+                <li className='nav-item'>
+                  <Link href='#service' passHref onClick={() => {
+                    setTimeout(() => {
+                      setIsMobileMenuOpen(true)
+                    }, 1000);
+                  }} >
+                    Services
+                  </Link>
+                </li>
+                <li className='nav-item'>
+                  <Link href='/home' passHref onClick={() => setIsMobileMenuOpen(true)} >
+                    Tech
+                  </Link>
+                </li>
+
+                <button className="bg-white rounded-full border-2 px-3 py-[0.2rem]  border-[#3d3d3d6c]" >
+                  Contact Us
+                </button>
+              </ul>
 
 
-              </li>
+            </div>
 
-              <li><div className='w-full h-[6vh] text-4xl flex items-center p-4 gap-2'>
-              </div></li>
 
-              <li> <Link href="/login" className='flex w-full h-[6vh]  p-4 items-center gap-2 text-4xl'><span className='text-lg'><p>Logout</p></span>
-              </Link></li>
-            </ul>
-          </div>
+          </>
+
         ) : (<></>)
       }
 
-    </nav>
+    </nav >
   );
 };
 

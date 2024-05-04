@@ -10,7 +10,6 @@ nav {
         0 10px 10px rgba(250, 249, 208, 0.22);
 
     transition: transform 0.2s;
-    font-family: "Poppins", sans-serif;
     background-color: black;
 
     font-style: normal;
@@ -75,11 +74,11 @@ ul {
     position: absolute;
     top: 105%;
     right: 0%;
-    background-color: #ffffff69 !important;
+    background-color: #1818189c !important;
 
-    backdrop-filter: blur(30px);
+
     height: 100vh;
-    z-index: 1000;
+    z-index: 99;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
 
@@ -118,79 +117,7 @@ ul {
 }
 
 .mobile-menu ul li a {
-    color: black;
+    color: #ffffff;
+
     text-decoration: none;
-}
-
-
-
-@media screen and (max-width: 431px) {
-    .mobile-menu {
-        width: 80vw !important;
-
-    }
-
-    .hide-list {
-        display: none;
-    }
-
-    .logo {
-        width: 20%;
-    }
-}
-
-
-/* Media Query for Mobile Menu */
-@media screen and (max-width: 768px) {
-    .mobile-menu-icon {
-        display: inline;
-    }
-
-    .navbar {
-        display: flex;
-
-
-    }
-
-    .logo {
-        width: 10%;
-    }
-
-    .mobile-menu {
-        width: 36vw;
-        background-color: #ffffff;
-    }
-
-    .hide-list {
-        display: none;
-    }
-
-    .navbar {
-        display: flex;
-        padding-left: 5%;
-        padding-right: 5%
-    }
-}
-
-
-@media screen and (min-width: 769px) {
-
-    .hamburger {
-        display: none;
-    }
-
-    .mobile-menu {
-        display: none;
-    }
-
-    .logo {
-        width: 60px;
-    }
-
-    .navbar {
-        display: flex;
-        padding-left: 15vw;
-        padding-right: 15vw;
-    }
-
 }
