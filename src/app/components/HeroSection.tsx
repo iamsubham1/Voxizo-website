@@ -10,7 +10,7 @@ const HeroSection = () => {
       </h1>
       <p className='mt-5 secondary-font text-[.5em] mb-7'>
         From brand awareness through customer acquisition and everything in<br />
-        between, we"ll craft a strategic digital groth game-plan for you.
+        between, we&quot;ll craft a strategic digital groth game-plan for you.
       </p>
       <button className="hero-btn rounded-full px-5 py-3 mx-auto " >
         Get in Touch
