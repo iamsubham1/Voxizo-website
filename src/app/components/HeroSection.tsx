@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className="w-[70%] mt-[10%] text-center herofont">
+    <div className="w-[70%] mt-[10%] text-center herofont text-white">
 
       <h1 className="text-[2em]">
         Marketing done <div className=" rounded-full herofont easy inline-block px-2 py-1 text-[.8em]">easy</div><br /> As always
