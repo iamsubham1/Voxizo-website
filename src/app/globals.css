@@ -6,7 +6,6 @@
 
 html {
   scroll-behavior: smooth;
-
 }
 
 
@@ -30,8 +29,6 @@ body {
   width: 100vw;
   height: 100vh;
   margin-top: 5%;
-
-
 }
 
 .secondary-font {
@@ -277,7 +274,6 @@ body {
 
   object-fit: contain !important;
 }
-
 
 
 
