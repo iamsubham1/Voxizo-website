@@ -21,6 +21,7 @@ const Home: React.FC = () => {
         <ImageSlider />
       </div>
       <Services />
+
     </main>
   );
 };
