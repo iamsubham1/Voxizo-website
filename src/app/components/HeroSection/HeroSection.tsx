@@ -17,7 +17,7 @@ const HeroSection = () => {
         <p className="mt-4 secondary-font text-[1rem] mb-7">
           From brand awareness through customer acquisition and everything in
           <br />
-          between, we"ll craft a strategic digital groth game-plan for you.
+          between, we&quot;ll craft a strategic digital groth game-plan for you.
         </p>
       </div>
       <div className="heroSection-button">
