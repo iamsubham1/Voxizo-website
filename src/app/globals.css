@@ -6,16 +6,8 @@
 
 html {
   scroll-behavior: smooth;
-<<<<<<< HEAD
-  cursor: none;
-=======
->>>>>>> 89cbb79ede8b94ee61e4fe5968fbf84028702957
 }
 
-* {
-  scroll-behavior: smooth;
-  cursor: none;
-}
 
 body {
   background: black;
