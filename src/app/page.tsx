@@ -10,14 +10,15 @@ import Services from "./components/Services";
 
 const Home: React.FC = () => {
   return (
-    <main>
-        <div className="flex w-full flex-col items-center ">
-          <HeroSection />
-        </div>
-        <div className="w-[80vw] mx-auto overflow-hidden flex ">
-          <ImageSlider />
-        </div>
-        <SectionPageInfo />
+    <main className="min-h-[200vh]">
+      <BackgroundBeams />
+      <div className="flex w-full flex-col items-center ">
+        <HeroSection />
+      </div>
+      <div className='w-[80vw] mx-auto overflow-hidden flex '>
+        <ImageSlider />
+      </div>
+      <Services />
     </main>
   );
 };

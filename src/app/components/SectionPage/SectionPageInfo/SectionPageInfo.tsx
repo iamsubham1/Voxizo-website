@@ -6,7 +6,7 @@ import { motion as m } from "framer-motion";
 
 const SectionPageInfo: React.FC = () => {
   return (
-    <div>
+    <div className="w-full">
       <div
         className={`flex flex-col justify-center items-center sectionPageInfo-container`}
       >
@@ -59,10 +59,11 @@ const SectionPageInfo: React.FC = () => {
           </m.button>
         </div>
       </div>
-      <div>
-        <SectionPageCards />
-      </div>
+
+      <SectionPageCards />
+
     </div>
+
   );
 };
 
