@@ -53,9 +53,6 @@ const Services = () => {
           className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
         />
       </WobbleCard>
-
-
-
     </div>
   )
 }

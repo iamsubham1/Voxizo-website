@@ -1,0 +1,97 @@
+
+
+.heroSection-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-height: 80vh;
+    min-width: 100vw;
+    .heroSection-headings{
+        font-weight: 500;
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 999px){
+    .heroSection-container{
+        gap: 1.5rem;
+        min-height: 60vh;
+        .heroSection-headings{
+            h1{
+                font-weight: 500;
+                font-size: 2.8rem;
+            }
+        }
+        .heroSection-paragraphs{
+            p{
+                font-size: 1.1rem;
+            }
+        }
+        .heroSection-button{
+            button{
+                padding: 1rem 1.8rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .heroSection-container{
+        gap: 0.3rem;
+        min-height: 65vh;
+        margin-top: 2rem;
+        .heroSection-headings{
+            h1{
+                font-weight: 400;
+                font-size: 2rem;
+            }
+            .easy-logo{
+                font-size: 1.6rem;
+                padding: 0.3rem 1rem;
+            }
+        }
+        .heroSection-paragraphs{
+            p{
+                font-size: 0.6rem;
+            }
+        }
+        .heroSection-button{
+            button{
+                padding: 0.3rem 1.2rem;
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .heroSection-container{
+        gap: 0.01rem;
+        min-height: 55vh;
+        margin-top: 1.5rem;
+        .heroSection-headings{
+            h1{
+                font-weight: 400;
+                font-size: 1.5rem;
+            }
+            .easy-logo{
+                font-size: 1.4rem;
+                padding: 0.3rem 1.1rem;
+            }
+        }
+        .heroSection-paragraphs{
+            p{
+                font-size: 0.55rem;
+            }
+        }
+        .heroSection-button{
+            button{
+                padding: 0.3rem 1.2rem;
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

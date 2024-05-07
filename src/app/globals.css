@@ -6,7 +6,6 @@
 
 html {
   scroll-behavior: smooth;
-
 }
 
 :root {
@@ -46,8 +45,6 @@ body {
   width: 100vw;
   height: 100vh;
   margin-top: 5%;
-
-
 }
 
 .secondary-font {
@@ -251,4 +248,15 @@ body {
 
 
   object-fit: contain !important;
+}
+
+/* Styling the main scrollbar */
+::-webkit-scrollbar {
+  width: 0.3rem; /* Width of the scrollbar */
+}
+
+/* Styling the thumb part of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: grey; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
 }
