@@ -1,0 +1,139 @@
+
+
+
+.sectionPageInfo-container{
+    gap: 1rem;
+    min-height: 100vh;
+    .sectionPageInfo-headings{
+        h1{
+            font-size: 5rem;
+            font-weight: 700;
+        }
+        span {
+            background: linear-gradient(
+                90deg,
+                rgba(2, 0, 36, 1) -30%,
+                rgba(31, 83, 198, 1) 30%,
+                rgba(0, 212, 255, 1) 100%
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent; /* Makes the text color transparent, showing the background */
+            display: inline-block; /* Needed to ensure the gradient covers the text */
+        }
+        
+    }
+    .sectionPageInfo-paragraphs{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: rgb(163,165,165);
+        }
+    }
+    .sectionPageInfo-button{
+        button{
+            padding: 0.7rem 1.5rem;
+            border-radius: 1.5rem;
+            background: linear-gradient(
+                90deg,
+                rgba(2, 0, 36, 1) 10%,
+                rgba(31, 83, 198, 1) 70%,
+                rgba(0, 212, 255, 1) 100%
+            );
+            font-weight: 500;
+            font-size: 0.95rem;
+            background-size: 400% 400%;
+            animation: gradient 8s ease infinite;
+        }
+    }
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    .sectionPageInfo-container{
+        gap: 3.5rem;
+        min-height: 70vh;
+        .sectionPageInfo-headings{
+            h1{
+                font-size: 4rem !important;
+            }   
+        }
+        .sectionPageInfo-paragraphs{
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        .sectionPageInfo-button{
+            button{
+                padding: 0.65rem 1.45rem;
+                font-weight: 500;
+                font-size: 0.9rem;
+            }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 620px) {
+
+    .sectionPageInfo-container{
+        gap: 2rem;
+        .sectionPageInfo-headings{
+            h1{
+                font-size: 2.5rem !important;
+            }   
+        }
+        .sectionPageInfo-paragraphs{
+            p{
+                font-size: 0.9rem;
+            }
+        }
+        .sectionPageInfo-button{
+            button{
+                padding: 0.55rem 1.35rem;
+                font-weight: 500;
+                font-size: 0.8rem;
+            }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+
+    .sectionPageInfo-container{
+        gap: 1.7rem;
+        .sectionPageInfo-headings{
+            h1{
+                font-size: 2rem !important;
+                font-weight: 600;
+            }   
+        }
+        .sectionPageInfo-paragraphs{
+            p{
+                font-size: 0.7rem;
+            }
+        }
+        .sectionPageInfo-button{
+            button{
+                padding: 0.45rem 1.25rem;
+                font-weight: 400;
+                font-size: 0.7rem;
+            }
+        }
+    }
+  }

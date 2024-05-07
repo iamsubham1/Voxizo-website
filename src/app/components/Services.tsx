@@ -1,6 +1,6 @@
 import React from 'react'
 import { WobbleCard } from '../components/ui/wobble-card';
-import Image from 'next/image';
+import Link from 'next/link';
 
 const Services = () => {
   return (
@@ -18,8 +18,11 @@ const Services = () => {
           <p className="mt-4 text-left  text-base/6 text-[#bebebe]">
             Want to increase your business reach ? We offer various social media marketing campaigns
           </p>
-          <button className='mt-5 shine-btn text-[.8em]'>Start Now !</button>
-        </div>
+          <button className='mt-5 shine-btn text-[.8em]' onClick={() => { }}>
+            <Link href="/services">
+              Start Now !
+            </Link>
+          </button>        </div>
 
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-black gradient-border " className="  bg-black cursor-pointer ">
@@ -44,9 +47,6 @@ const Services = () => {
         </div>
 
       </WobbleCard>
-
-
-
     </div>
   )
 }
