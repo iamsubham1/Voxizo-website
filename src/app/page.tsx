@@ -10,7 +10,7 @@ import Services from "./components/Services";
 
 const Home: React.FC = () => {
   return (
-    <main className="min-h-[200vh]">
+    <main className="">
       <BackgroundBeams />
 
       <div className="flex w-full flex-col items-center ">

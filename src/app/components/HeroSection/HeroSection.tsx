@@ -3,13 +3,13 @@ import './HeroSection.css'
 
 const HeroSection = () => {
   return (
-    <div className="w-[70%] mt-[4%] text-center heroSection-container ">
+    <div className="w-[70%] text-center heroSection-container mt-[10%]">
       <div className="heroSection-headings">
         <h1 className="text-7xl">
           Marketing done{" "}
-          <div className=" rounded-full easy inline-block px-2 py-1 text-4xl easy-logo">
+          <span className=" rounded-full easy inline-block px-2 py-1 text-4xl easy-logo">
             easy
-          </div>
+          </span>
           <br /> As always
         </h1>
       </div>
@@ -20,8 +20,8 @@ const HeroSection = () => {
           between, we&quot;ll craft a strategic digital groth game-plan for you.
         </p>
       </div>
-      <div className="heroSection-button">
-        <button className="hero-btn rounded-full px-4 py-1 mx-auto ">
+      <div className="heroSection-button mb-10">
+        <button className="hero-btn rounded-full px-4 py-2 mx-auto ">
           Get in Touch
           <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
             <path

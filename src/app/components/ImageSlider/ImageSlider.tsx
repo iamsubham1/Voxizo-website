@@ -20,23 +20,23 @@ const images = [
 
 const ImageSlider = () => {
   return (
-    <div className="ImageSlider  border-[#171717] h-20 mx-auto relative text-center imageSlider-container">
+    <div className="ImageSlider border-[#171717] h-20 mx-auto relative text-center imageSlider-container">
       <div>Our Partners</div>
       <div>
-      <div className="ImageSlider-blur-left"></div>
-      <div className="ImageSlider-blur-right"></div>
-      <div className="ImageSlider-content w-[200%] h-20 flex items-center justify-around absolute left-0 gap-[] animate">
-        {images.map((i, index) => (
-          <div key={index} className="flex justify-center items-center ">
-            <Image src={i} alt="" className=" banner-logo" />
-          </div>
-        ))}
-        {images.map((i, index) => (
-          <div key={index} className="flex justify-center items-center ">
-            <Image src={i} alt="" className="banner-logo" />
-          </div>
-        ))}
-      </div>
+        <div className="ImageSlider-blur-left"></div>
+        <div className="ImageSlider-blur-right"></div>
+        <div className="ImageSlider-content w-[200%] h-20 flex items-center justify-around absolute left-0 gap-[] animate">
+          {images.map((i, index) => (
+            <div key={index} className="flex justify-center items-center ">
+              <Image src={i} alt="" className=" banner-logo" />
+            </div>
+          ))}
+          {images.map((i, index) => (
+            <div key={index} className="flex justify-center items-center ">
+              <Image src={i} alt="" className="banner-logo" />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

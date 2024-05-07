@@ -8,11 +8,18 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  font-family: "Poppins",
+    sans-serif;
+
+}
 
 body {
   background: black;
   font-style: normal;
   overflow-x: hidden;
+
+
 
 }
 
