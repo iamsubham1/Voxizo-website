@@ -6,7 +6,9 @@ const page = () => {
 
   return (
 
-    <div className='container'>page</div>
+    <div className='wrapper'>
+      <h1 className='bg-text'>HISTORY</h1>
+    </div>
 
   )
 };

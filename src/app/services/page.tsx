@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionPageInfo from '../components/SectionPage/SectionPageInfo/SectionPageInfo'
-import SectionPageCards from '../components/SectionPage/SectionPageCards/SectionPageCards'
+import SectionPageInfo from '../components/ServicePageInfo/SectionPageInfo'
+import SectionPageCards from '../components/ServicePageCards/SectionPageCards'
 
 const page = () => {
     return (

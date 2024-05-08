@@ -1,63 +1,68 @@
-
-
-.sectionPageCards-container{
+.sectionPageCards-container {
     min-height: 100vh !important;
     display: grid;
     grid-template-columns: 50% 50%;
 
-    .cards-container,.sectionPageCards-info{
+    .cards-container,
+    .sectionPageCards-info {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .cards-container{
+
+    .cards-container {
         display: flex;
         gap: 2rem;
 
-        .twoCard-container,.threeCard-container{
+        .twoCard-container,
+        .threeCard-container {
             min-height: 65%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             padding: 0.1rem;
         }
-        .threeCard-container{
+
+        .threeCard-container {
             min-height: 90%;
         }
     }
-    .sectionPageCards-info{
+
+    .sectionPageCards-info {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        .sectionPageCards-headings{
-            h1{
+
+        .sectionPageCards-headings {
+            h1 {
                 font-size: 2rem;
                 font-weight: 500;
             }
-            
+
         }
-        .sectionPageCards-paragraphs{
+
+        .sectionPageCards-paragraphs {
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
             justify-content: center;
             align-items: center;
-            p{
+
+            p {
                 font-size: 1rem;
                 font-weight: 400;
-                color: rgb(163,165,165);
+                color: rgb(163, 165, 165);
             }
         }
-        .sectionPageCards-button{
-            button{
+
+        .sectionPageCards-button {
+            button {
                 padding: 0.5rem 1.3rem;
                 border-radius: 1.5rem;
-                background: linear-gradient(
-                    90deg,
-                    rgba(2, 0, 36, 1) 10%,
-                    rgba(31, 83, 198, 1) 70%,
-                    rgba(0, 212, 255, 1) 100%
-                );
+                background: linear-gradient(90deg,
+                        rgba(2, 0, 36, 1) 10%,
+                        rgba(31, 83, 198, 1) 70%,
+                        rgba(0, 212, 255, 1) 100%);
                 font-weight: 400;
                 font-size: 0.8rem;
                 background-size: 400% 400%;
@@ -68,8 +73,8 @@
 }
 
 /* card css*/
-.card-body{
-    border: 0.01rem solid rgb(210, 207, 207);
+.card-body {
+    border: 0.01rem solid rgb(255, 255, 255);
     max-height: 10rem !important;
     max-width: 9rem !important;
     min-height: 10rem !important;
@@ -79,58 +84,66 @@
     align-items: center;
     flex-direction: column;
     gap: 0.5rem;
-    box-shadow: 3px 3px rgb(146, 145, 145);
-    .cardimg{
+    box-shadow: 3px 3px rgb(171, 171, 171);
+
+    .cardimg {
         width: 60%;
         height: 60%;
         position: relative;
         left: 1.2rem;
     }
-    .card-text{
+
+    .card-text {
         font-size: 0.95rem;
         color: rgb(159, 158, 158);
         min-width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 
 @media only screen and (max-width: 999px) {
-    .sectionPageCards-container{
+    .sectionPageCards-container {
         display: flex;
         flex-direction: column;
         padding: 1rem;
         align-items: center;
         justify-content: space-evenly;
-        .cards-container{
+
+        .cards-container {
             padding: 2rem;
-            .twoCard-container,.threeCard-container{
+
+            .twoCard-container,
+            .threeCard-container {
                 gap: 1.5rem;
             }
         }
     }
 }
 
-@media only screen and (max-width: 590px){
-    .sectionPageCards-container{
-        .sectionPageCards-info{
+@media only screen and (max-width: 590px) {
+    .sectionPageCards-container {
+        .sectionPageCards-info {
             gap: 1.7rem;
-            .sectionPageCards-headings{
-                h1{
+
+            .sectionPageCards-headings {
+                h1 {
                     font-size: 1.5rem;
                     font-weight: 500;
                 }
-                
+
             }
-            .sectionPageCards-paragraphs{
-                p{
+
+            .sectionPageCards-paragraphs {
+                p {
                     font-size: 0.75rem;
                 }
             }
-            .sectionPageCards-button{
-                button{
+
+            .sectionPageCards-button {
+                button {
                     padding: 0.5rem 1.3rem;
                     font-size: 0.7rem;
                 }
@@ -138,121 +151,137 @@
         }
     }
 
-    
+
     /* card css*/
-    .card-body{
+    .card-body {
         max-height: 8rem !important;
         max-width: 7rem !important;
         min-height: 8rem !important;
         min-width: 7rem !important;
         gap: 0.5rem;
         box-shadow: 3px 3px rgb(146, 145, 145);
-        .cardimg{
+
+        .cardimg {
             width: 60%;
             height: 60%;
             position: relative;
             left: 0.9rem;
         }
-        .card-text{
+
+        .card-text {
             font-size: 0.8rem;
         }
     }
 }
 
-@media only screen and (max-width: 450px){
-    .sectionPageCards-container{
-        .cards-container{
+@media only screen and (max-width: 450px) {
+    .sectionPageCards-container {
+        .cards-container {
             gap: 1.3rem;
         }
-        .sectionPageCards-info{
+
+        .sectionPageCards-info {
             gap: 0.8rem;
-            .sectionPageCards-headings{
-                h1{
+
+            .sectionPageCards-headings {
+                h1 {
                     font-size: 1.2rem;
                     font-weight: 500;
                 }
             }
-            .sectionPageCards-paragraphs{
+
+            .sectionPageCards-paragraphs {
                 gap: 0.3rem;
-                p{
+
+                p {
                     font-size: 0.6rem;
                 }
             }
-            .sectionPageCards-button{
-                button{
+
+            .sectionPageCards-button {
+                button {
                     padding: 0.5rem 1.3rem;
                     font-size: 0.7rem;
                 }
             }
         }
     }
- 
+
     /* card css*/
-    .card-body{
+    .card-body {
         max-height: 7.5rem !important;
         max-width: 6.5rem !important;
         min-height: 7.5rem !important;
         min-width: 6.5rem !important;
         gap: 0.5rem;
         box-shadow: 3px 3px rgb(146, 145, 145);
-        .cardimg{
+
+        .cardimg {
             width: 60%;
             height: 60%;
             position: relative;
             left: 0.9rem;
         }
-        .card-text{
+
+        .card-text {
             font-size: 0.8rem;
         }
     }
 }
 
-@media only screen and (max-width: 350px){
-    .sectionPageCards-container{
-        .cards-container{
+@media only screen and (max-width: 350px) {
+    .sectionPageCards-container {
+        .cards-container {
             gap: 1rem;
             border: 1px solid red;
             position: relative;
             left: 1rem;
         }
-        .sectionPageCards-info{
+
+        .sectionPageCards-info {
             gap: 0.6rem;
-            .sectionPageCards-headings{
-                h1{
+
+            .sectionPageCards-headings {
+                h1 {
                     font-size: 1rem;
                     font-weight: 500;
                 }
             }
-            .sectionPageCards-paragraphs{
+
+            .sectionPageCards-paragraphs {
                 gap: 0.3rem;
-                p{
+
+                p {
                     font-size: 0.5rem;
                 }
             }
-            .sectionPageCards-button{
-                button{
+
+            .sectionPageCards-button {
+                button {
                     padding: 0.3rem 1.2rem;
                     font-size: 0.7rem;
                 }
             }
         }
     }
- 
+
     /* card css*/
-    .card-body{
+    .card-body {
         max-height: 7.5rem !important;
         max-width: 6.5rem !important;
         min-height: 7.5rem !important;
         min-width: 6.5rem !important;
         gap: 0.5rem;
         box-shadow: 3px 3px rgb(146, 145, 145);
-        .cardimg{
+
+        .cardimg {
             width: 60%;
             height: 60%;
             position: relative;
             left: 0.9rem;
         }
-        .card-text{
+
+        .card-text {
             font-size: 0.8rem;
         }
     }

@@ -5,7 +5,7 @@ import { BackgroundBeams } from "./components/ui/background-beams";
 
 import ImageSlider from "./components/ImageSlider/ImageSlider";
 import HeroSection from "./components/HeroSection/HeroSection";
-import SectionPageInfo from "./components/SectionPage/SectionPageInfo/SectionPageInfo";
+import SectionPageInfo from "./components/ServicePageInfo/SectionPageInfo";
 import Services from "./components/Services";
 
 const Home: React.FC = () => {

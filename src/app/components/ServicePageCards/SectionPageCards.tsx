@@ -1,12 +1,12 @@
 import Card from "./Card";
 import "./SectionPageCards.css";
-import googleImg from "../../../assets/cardsImages/google-color-svgrepo-com.svg";
-import fbImg from "../../../assets/cardsImages/facebook-1-svgrepo-com.svg";
-import tiktokImg from "../../../assets/cardsImages/tiktok-svgrepo-com.svg";
-import shopify from "../../../assets/cardsImages/shopify-svgrepo-com.svg";
-import webDesign from "../../../assets/cardsImages/web-design-svgrepo-com.svg";
-import webDev from "../../../assets/cardsImages/html-website-svgrepo-com.svg";
-import logoDesign from "../../../assets/cardsImages/graphic-design-svgrepo-com.svg";
+import googleImg from "../../assets/cardsImages/google-color-svgrepo-com.svg";
+import fbImg from "../../assets/cardsImages/facebook-1-svgrepo-com.svg";
+import tiktokImg from "../../assets/cardsImages/tiktok-svgrepo-com.svg";
+import shopify from "../../assets/cardsImages/shopify-svgrepo-com.svg";
+import webDesign from "../../assets/cardsImages/web-design-svgrepo-com.svg";
+import webDev from "../../assets/cardsImages/html-website-svgrepo-com.svg";
+import logoDesign from "../../assets/cardsImages/graphic-design-svgrepo-com.svg";
 import { motion } from "framer-motion";
 
 const container = {

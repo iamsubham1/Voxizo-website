@@ -1,6 +1,6 @@
 "use client";
 
-import SectionPageCards from "../SectionPageCards/SectionPageCards";
+import SectionPageCards from "../ServicePageCards/SectionPageCards";
 import "./SectionPageInfo.css";
 import { motion as m } from "framer-motion";
 
