@@ -1,13 +1,14 @@
 "use client";
 
 import React from 'react'
+import CarouselPage from '../components/CarouselPage/CarouselPage';
 
 const page = () => {
 
   return (
 
     <div className='wrapper'>
-      <h1 className='bg-text'>HISTORY</h1>
+      <CarouselPage />
     </div>
 
   )
