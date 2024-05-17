@@ -119,19 +119,3 @@
             color: rgb(163, 165, 165);
         }
     }
-
-    .carouselPageInfo-button {
-        button {
-            padding: 0.7rem 1.5rem;
-            border-radius: 1.5rem;
-            background: linear-gradient(90deg,
-                    rgba(2, 0, 36, 1) 10%,
-                    rgba(31, 83, 198, 1) 70%,
-                    rgba(0, 212, 255, 1) 100%);
-            font-weight: 500;
-            font-size: 0.95rem;
-            background-size: 400% 400%;
-            animation: gradient 8s ease infinite;
-        }
-    }
-}
