@@ -1,10 +1,10 @@
-.slider {
+bhai just paste this in CarouselPage.css .slider {
     min-height: 20vh;
     display: grid;
     place-items: center;
     position: relative;
     width: 100%;
-    max-width: 50vw;
+    max-width: 40vw;
     overflow: hidden;
     margin: auto;
     padding-top: 3rem;
@@ -32,6 +32,13 @@
 .carouselCard-container {
     width: 100%;
     transition: transform 0.3s;
+    max-width: 35vh !important;
+    z-index: 12;
+
+    .cardimg {
+        max-width: 4rem;
+        max-height: 4rem;
+    }
 }
 
 .carouselCard-container:hover {
@@ -39,7 +46,7 @@
 }
 
 .slider::before {
-    background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgba(0, 0, 0) 100%);
+    background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
     content: '';
     position: absolute;
     width: 20%;
@@ -49,7 +56,7 @@
 }
 
 .slider::after {
-    background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgba(0, 0, 0) 100%);
+    background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
     content: '';
     position: absolute;
     width: 20%;
@@ -69,17 +76,6 @@
 }
 
 
-/*Carousel card css*/
-.carouselCard-container {
-    max-width: 35vh !important;
-    z-index: 12;
-
-    .cardimg {
-        max-width: 4rem;
-        max-height: 4rem;
-    }
-}
-
 .carouselPage-info {
     display: flex;
     flex-direction: column;
@@ -89,7 +85,7 @@
     margin-top: -1rem;
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 3.3rem;
         font-weight: 600;
 
         span {
@@ -114,8 +110,116 @@
         align-items: center;
 
         p {
-            font-size: 1rem;
+            font-size: 0.98rem;
             font-weight: 400;
             color: rgb(163, 165, 165);
         }
     }
+
+    .carouselPageInfo-button {
+        button {
+            padding: 0.68rem 1.48rem;
+            border-radius: 1.5rem;
+            background: linear-gradient(90deg,
+                    rgba(2, 0, 36, 1) 10%,
+                    rgba(31, 83, 198, 1) 70%,
+                    rgba(0, 212, 255, 1) 100%);
+            font-weight: 500;
+            font-size: 0.93rem;
+            background-size: 400% 400%;
+            animation: gradient 8s ease infinite;
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .slider {
+        min-height: 15vh;
+        margin-top: -5rem;
+    }
+
+    .slider-track {
+        display: flex;
+        width: calc(250px * 18);
+        animation: scroll 20s linear infinite;
+    }
+
+    .slide {
+        height: 250px;
+    }
+
+    .carouselCard-container {
+        .cardimg {
+            max-width: 5rem;
+            max-height: 5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+
+    .carouselCard-container {
+        .cardimg {
+            max-width: 5rem;
+            max-height: 5rem;
+        }
+    }
+
+    .carouselPage-info {
+        gap: 0.8rem;
+        margin-top: 1rem;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .carouselPageInfo-paragraphs {
+            p {
+                font-size: 0.9rem;
+            }
+        }
+
+        .carouselPageInfo-button {
+            button {
+                padding: 0.6rem 1.3rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+    .slider {
+        max-width: 95vw !important;
+    }
+
+    .carouselCard-container {
+        .cardimg {
+            max-width: 3.5rem;
+            max-height: 3.5rem;
+        }
+    }
+
+    .carouselPage-info {
+        gap: 0.8rem;
+        margin-top: 1rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .carouselPageInfo-paragraphs {
+            p {
+                font-size: 0.7rem;
+            }
+        }
+
+        .carouselPageInfo-button {
+            button {
+                padding: 0.5rem 1.2rem;
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

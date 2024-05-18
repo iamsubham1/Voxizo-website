@@ -27,7 +27,7 @@ const ImageSlider = () => {
         <div className="ImageSlider-blur-right"></div>
         <div className="ImageSlider-content w-[200%] h-20 flex items-center justify-around absolute left-0 gap-[] animate">
           {images.map((i, index) => (
-            <div key={index} className="flex justify-center items-center ">
+            <div key={index} className="flex justify-center items-center img-container ">
               <Image src={i} alt="" className=" banner-logo" />
             </div>
           ))}
