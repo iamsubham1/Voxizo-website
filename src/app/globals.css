@@ -237,7 +237,7 @@ body {
 }
 
 .animate {
-  animation: scroll 20s ease-in infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .ImageSlider {
@@ -401,12 +401,6 @@ body {
     font-size: 30px;
   }
 }
-
-
-
-
-
-
 
 /* components/CustomCursor.module.css */
 

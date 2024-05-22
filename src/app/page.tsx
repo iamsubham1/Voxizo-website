@@ -11,7 +11,6 @@ import Services from "./components/Services";
 const Home: React.FC = () => {
   return (
     <main className="">
-      <BackgroundBeams />
 
       <div className="flex w-full flex-col items-center ">
         <HeroSection />

@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li className={`nav-item ${pathname === '/home' ? 'active' : ''}`}>
-            <Link href='/home' passHref >
+            <Link href='/tech' passHref >
               Tech
             </Link>
           </li>
