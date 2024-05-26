@@ -1,6 +1,43 @@
 import React from 'react'
 import { HoverEffect } from '../components/ui/card-hover-effect'
-
+const projects = [
+    {
+        title: "React.js",
+        description:
+            "A technology company that builds economic infrastructure for the internet.",
+        link: "https://stripe.com",
+    },
+    {
+        title: "Woo",
+        description:
+            "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+        link: "https://netflix.com",
+    },
+    {
+        title: "Google Ads",
+        description:
+            "A multinational technology company that specializes in Internet-related services and products.",
+        link: "https://google.com",
+    },
+    {
+        title: "Meta Ads",
+        description:
+            "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+        link: "https://meta.com",
+    },
+    {
+        title: "Wordpress",
+        description:
+            "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+        link: "https://amazon.com",
+    },
+    {
+        title: "Next.js",
+        description:
+            "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+        link: "https://microsoft.com",
+    },
+];
 const page = () => {
     return (
         <>
@@ -20,7 +57,7 @@ const page = () => {
 
             <div className='max-w-[80%] mt-[10%] w-full text-center text-[#d4d4d4] flex'>
                 <div className='min-w-[45%]  text-left mt-5 '>
-                    <div className="bg-[#6b6b6b2c] rounded-lg mb-4 px-3 py-1.5 inline-block">
+                    <div className="bg-[#6b6b6b28] rounded-lg mb-4 px-3 py-1.5 inline-block">
 
                         <span className='caps bg-[#272727]  text-[1.2rem] rounded-md'>FEATURES</span>
                     </div>
@@ -84,41 +121,3 @@ export default page
 
 
 
-export const projects = [
-    {
-        title: "React.js",
-        description:
-            "A technology company that builds economic infrastructure for the internet.",
-        link: "https://stripe.com",
-    },
-    {
-        title: "Woo",
-        description:
-            "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-        link: "https://netflix.com",
-    },
-    {
-        title: "Google Ads",
-        description:
-            "A multinational technology company that specializes in Internet-related services and products.",
-        link: "https://google.com",
-    },
-    {
-        title: "Meta Ads",
-        description:
-            "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-        link: "https://meta.com",
-    },
-    {
-        title: "Wordpress",
-        description:
-            "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-        link: "https://amazon.com",
-    },
-    {
-        title: "Next.js",
-        description:
-            "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-        link: "https://microsoft.com",
-    },
-];
