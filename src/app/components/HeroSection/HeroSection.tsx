@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="w-[70%] text-center heroSection-container mt-[10%]">
       <div className="heroSection-headings">
-        <h1 className="text-7xl">
+        <h1 className="text-7xl font-normal">
           Marketing done{" "}
           <span className=" rounded-full easy inline-block px-2 py-1 text-4xl easy-logo">
             easy

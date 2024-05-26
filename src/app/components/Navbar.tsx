@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
               Services
             </Link>
           </li>
-          <li className={`nav-item ${pathname === '/home' ? 'active' : ''}`}>
+          <li className={`nav-item ${pathname === '/tech' ? 'active' : ''}`}>
             <Link href='/tech' passHref >
               Tech
             </Link>
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
                     Services
                   </Link>
                 </li>
-                <li className={`nav-item ${pathname === '/home' ? 'active' : ''}`}>
+                <li className={`nav-item ${pathname === '/tech' ? 'active' : ''}`}>
                   <Link href='/home' passHref onClick={() => setIsMobileMenuOpen(true)} >
                     Tech
                   </Link>
