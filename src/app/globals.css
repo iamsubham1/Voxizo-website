@@ -30,10 +30,6 @@ body {
   }
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
-}
 
 .secondary-font {
   color: rgb(153, 153, 153)
@@ -320,6 +316,15 @@ body {
 
 
   }
+
+  .techH1 {
+    font-size: 2.5rem !important;
+  }
+
+  .container {
+    background-position: top;
+    background-size: 0%;
+  }
 }
 
 
@@ -402,17 +407,40 @@ body {
   }
 }
 
-/* components/CustomCursor.module.css */
 
-.cursor {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  background-color: rgb(255, 255, 255);
-  /* Customize cursor appearance */
-  border-radius: 50%;
-  pointer-events: none;
-  /* Ensure cursor does not interfere with mouse events */
-  z-index: 9999;
-  /* Ensure cursor appears above other elements */
+
+.container {
+  margin-top: 2%;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://chroniclehq.com/images/bg-website-min.png);
+  background-position: top;
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+
+.techH1 {
+  font-weight: 600;
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 105%;
+
+  span {
+    background: linear-gradient(90deg,
+        rgb(132, 0, 255) -30%,
+        rgb(103, 31, 198) 30%,
+        rgb(36, 2, 68) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* Makes the text color transparent, showing the background */
+    display: inline-block;
+    /* Needed to ensure the gradient covers the text */
+  }
+}
+
+.cardsContainer {
+  background-image: url(https://assets-global.website-files.com/651b214606318f3be54030a9/6524f82f6554489699b724e8_globe%201.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
